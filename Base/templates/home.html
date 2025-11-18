@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">      <!--added from github-->
+ 
+
+
+    
+</head>
+<body>   
+    <!--navbar section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <ul class="right-nav">
+            <li><a href="#home" class="t-white roboto">Home<i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about" class="t-white roboto">About Me<i class="fa-solid fa-"></i></a></li>
+            <li><a href="#skills" class="t-white roboto">Skills<i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#projects" class="t-white roboto">Projects<i class="fa-solid fa-project-diagram"></i></a></li>
+            <li><a href="#contact" class="t-white roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+<section id="home" class="home-section flex s-center sw-80 m-auto">
+    
+    <!-- Left Content -->
+    <div class="home-left flex items-center">
+        <div class="home-content">
+            <h4 class="poppins">Hi, I'm</h4>
+            <h1 class="t-white">Rahul Chaurasiya</h1>
+            <h4 class="poppins">Full Stack Developer</h4>
+
+            <a href="{% static 'pdf/resume.pdf' %}" target="_blank">
+                <button class="btn poppins">Resume</button>
+            </a>
+
+            <a class="btn live poppins" href="#" target="_blank">Let's Talk</a>
+        </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="home-right flex s-center items-center" id="mainImage">
+        <img src="{% static 'images/mypic.jpg' %}" alt="picture">
+    </div>
+
+</section>
+
+    <!-- ABOUT SECTION -->
+<section id="about">
+
+    <!-- Centered Heading -->
+    <h1 class="t center my-2 t-white f-2">About Me</h1>
+
+    <!-- Left Image + Right Content Wrapper -->
+    <div class="about-container flex s-around">
+
+        <!-- LEFT SIDE IMAGE  -->
+        <div class="about-left flex s-center items-center">
+            <img src="{% static 'images/aboutme.png' %}" alt="About Image">
+        </div>
+
+        <!-- RIGHT SIDE CONTENT -->
+        <div class="about-right flex items-center">
+            <div class="about-content">
+                <h2 class="t-white m-b-1 poppins">Rahul Chaurasiya</h2>
+
+                <p class="t-white poppins">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <a class="btn live poppins" id="hireme" href="">Hire Me</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="skills">
+    <h1 class="t-center my-2 t-white f-2">Skills</h1>
+
+    <div class="skillss-container">
+
+        <!-- LEFT SIDE IMAGE -->
+        <div class="skills-left">
+            <img src="{% static 'images/skillsimage.jpg' %}" alt="skills image">
+        </div>
+
+        <!-- RIGHT SIDE BARS -->
+        <div class="skills-right">
+            <div class="java bar p-relative">
+                <span class="bar-content left t-white">Core Java</span>
+                <span class="bar-content right-skills t-white">90%</span>
+            </div>
+
+            <div class="html bar p-relative">
+                <span class="bar-content left t-white">HTML</span>
+                <span class="bar-content right-skills t-white">80%</span>
+            </div>
+
+            <div class="css bar p-relative">
+                <span class="bar-content left t-white">CSS</span>
+                <span class="bar-content right-skills t-white">70%</span>
+            </div>
+
+            <div class="js bar p-relative">
+                <span class="bar-content left t-white">Javascript</span>
+                <span class="bar-content right-skills t-white">80%</span>
+            </div>
+
+            <div class="sql bar p-relative">
+                <span class="bar-content left t-white">MySQL</span>
+                <span class="bar-content right-skills t-white">75%</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- project section-->
+<section id="Project">
+    <h1 class="t-center my-2 t-white f-2">Projects</h1>
+
+    <div class="projects-container flex s-center">
+
+        <!-- Project 1 -->
+        <div class="projects-item flex f-col s-center items-center">
+            <h1 class="t-white poppins">Silent Guard</h1>
+            <p class="t-white poppins">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur.
+            </p>
+
+            <div class="button flex s-around">
+                <a href="" class="btn max-1 m-top" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="projects-item flex f-col s-center items-center">
+            <h1 class="t-white poppins">My Portfolio</h1>
+            <p class="t-white poppins">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur.
+            </p>
+
+            <div class="button flex s-around">
+                <a href="" class="btn max-1 m-top" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!--contact me section-->>
+
+<section id="Contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <div class="contact-container flex s-around item-center">
+        <div class="form" id="contactform">
+            <form method="post">
+                {% csrf_token %}
+                <div class="name form-div">
+                    <input type="text" name="name" id="name" class="poppins" placeholder="Enter your Name">
+                </div>
+                <div class="email form-div">
+                    <input type="email" name="email" id="" class="poppins" placeholder="Enter your Email"required>
+                </div>
+                <div class="phone form-div">
+                    <input type="phone" name="number" id="" class="poppins" placeholder="Enter your phone number"required>
+                </div>
+                <div class="textarea form-div">
+                    <textarea name="content" name="textarea" cols="30" rows="10" class="poppins" placeholder="Enter your message"></textarea>
+
+                </div>
+                <button type="submit"class="btn poppins" id="submit">send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--footer section-->
+
+<footer id="footer">
+    <ul class="flex s-center w-80 m-auto my-2 res">
+        <li><a href="#home" class="poppins">Home</a></li>
+        <li><a href="#about" class="poppins">about</a></li>
+        <li><a href="#skills" class="poppins">Skills</a></li>
+        <li><a href="#projects" class="poppins">Projects</a></li>
+        <li><a href="#portfolio" class="poppins">Portfolio</a></li>
+    </ul>
+    <ul class="flex s-center w-80 font-awesome">
+        <a href="" target="_blank">
+            <li><i class="fa-brands fa-linkdin">Linkdin</i></li>
+        </a>
+        <a href="" target="_blank">
+            <li><i class="fa-brands fa-github">Github</i></li>
+        </a>
+        <a href="" target="_blank">
+            <li><i class="fa-brands fa-instagram">Instagram</i></li>
+        </a>
+    </ul>
+    <p class="t-center my-2 poppins">Copyright &copy; 2024 Rahul Chaurasiya. All Rights Reserved. <span class="cpy-white poppins"> Error by night</span></p>
+</footer>
+
+
+
+    
+</body>
+</html>
