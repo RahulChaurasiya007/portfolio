@@ -194,9 +194,19 @@ body {
 
 
 /* Skills Section */
-#skills {
+#skills h1{
     margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
 }
+
+
+/* #skills h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+} */
 
 /* Parent container for 2-column layout */
 .skillss-container {
@@ -267,13 +277,13 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin: auto;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
 }
 
 /* Project Card */
 .projects-item {
-    width: 22rem;
+    width: 18rem;
     background: #2c2c6c;
     padding: 2rem 1.5rem;
     border-radius: 1.5rem;
